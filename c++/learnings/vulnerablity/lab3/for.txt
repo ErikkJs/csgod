@@ -1,0 +1,28 @@
+Starting program: /home/stu/esoto/vulnerablity/lab3/for 
+[Inferior 1 (process 11207) exited normally]
+No frame selected.
+Temporary breakpoint 1 at 0x40076a
+Starting program: /home/stu/esoto/vulnerablity/lab3/for 
+
+Temporary breakpoint 1, 0x000000000040076a in main ()
+Dump of assembler code for function main:
+   0x0000000000400766 <+0>:	push   %rbp
+   0x0000000000400767 <+1>:	mov    %rsp,%rbp
+=> 0x000000000040076a <+4>:	sub    $0x10,%rsp
+   0x000000000040076e <+8>:	movl   $0x0,-0x4(%rbp)
+   0x0000000000400775 <+15>:	jmp    0x40078a <main+36>
+   0x0000000000400777 <+17>:	mov    $0x400874,%esi
+   0x000000000040077c <+22>:	mov    $0x600c80,%edi
+   0x0000000000400781 <+27>:	callq  0x400660 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000400786 <+32>:	addl   $0x1,-0x4(%rbp)
+   0x000000000040078a <+36>:	cmpl   $0x4,-0x4(%rbp)
+   0x000000000040078e <+40>:	jle    0x400777 <main+17>
+   0x0000000000400790 <+42>:	mov    $0x0,%eax
+   0x0000000000400795 <+47>:	leaveq 
+   0x0000000000400796 <+48>:	retq   
+End of assembler dump.
+A debugging session is active.
+
+	Inferior 1 [process 11354] will be killed.
+
+Quit anyway? (y or n) 

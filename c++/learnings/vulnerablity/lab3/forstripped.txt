@@ -1,0 +1,396 @@
+=> 0x400670:	xor    %ebp,%ebp
+   0x400672:	mov    %rdx,%r9
+   0x400675:	pop    %rsi
+   0x400676:	mov    %rsp,%rdx
+   0x400679:	and    $0xfffffffffffffff0,%rsp
+   0x40067d:	push   %rax
+   0x40067e:	push   %rsp
+   0x40067f:	mov    $0x400860,%r8
+   0x400686:	mov    $0x4007f0,%rcx
+   0x40068d:	mov    $0x400766,%rdi
+   0x400694:	callq  0x400630 <__libc_start_main@plt>
+   0x400699:	hlt    
+   0x40069a:	nopw   0x0(%rax,%rax,1)
+   0x4006a0:	mov    $0x600c7f,%eax
+   0x4006a5:	push   %rbp
+   0x4006a6:	sub    $0x600c78,%rax
+   0x4006ac:	cmp    $0xe,%rax
+   0x4006b0:	mov    %rsp,%rbp
+   0x4006b3:	jbe    0x4006d0
+   0x4006b5:	mov    $0x0,%eax
+   0x4006ba:	test   %rax,%rax
+   0x4006bd:	je     0x4006d0
+   0x4006bf:	pop    %rbp
+   0x4006c0:	mov    $0x600c78,%edi
+   0x4006c5:	jmpq   *%rax
+   0x4006c7:	nopw   0x0(%rax,%rax,1)
+   0x4006d0:	pop    %rbp
+   0x4006d1:	retq   
+   0x4006d2:	data32 data32 data32 data32 nopw %cs:0x0(%rax,%rax,1)
+   0x4006e0:	mov    $0x600c78,%esi
+   0x4006e5:	push   %rbp
+   0x4006e6:	sub    $0x600c78,%rsi
+   0x4006ed:	sar    $0x3,%rsi
+   0x4006f1:	mov    %rsp,%rbp
+   0x4006f4:	mov    %rsi,%rax
+   0x4006f7:	shr    $0x3f,%rax
+   0x4006fb:	add    %rax,%rsi
+   0x4006fe:	sar    %rsi
+   0x400701:	je     0x400718
+   0x400703:	mov    $0x0,%eax
+   0x400708:	test   %rax,%rax
+   0x40070b:	je     0x400718
+   0x40070d:	pop    %rbp
+   0x40070e:	mov    $0x600c78,%edi
+   0x400713:	jmpq   *%rax
+   0x400715:	nopl   (%rax)
+   0x400718:	pop    %rbp
+   0x400719:	retq   
+   0x40071a:	nopw   0x0(%rax,%rax,1)
+   0x400720:	cmpb   $0x0,0x200669(%rip)        # 0x600d90
+   0x400727:	jne    0x40073a
+   0x400729:	push   %rbp
+   0x40072a:	mov    %rsp,%rbp
+   0x40072d:	callq  0x4006a0
+   0x400732:	pop    %rbp
+   0x400733:	movb   $0x1,0x200656(%rip)        # 0x600d90
+   0x40073a:	repz retq 
+   0x40073c:	nopl   0x0(%rax)
+   0x400740:	mov    $0x600a10,%edi
+   0x400745:	cmpq   $0x0,(%rdi)
+   0x400749:	jne    0x400750
+   0x40074b:	jmp    0x4006e0
+   0x40074d:	nopl   (%rax)
+   0x400750:	mov    $0x0,%eax
+   0x400755:	test   %rax,%rax
+   0x400758:	je     0x40074b
+   0x40075a:	push   %rbp
+   0x40075b:	mov    %rsp,%rbp
+   0x40075e:	callq  *%rax
+   0x400760:	pop    %rbp
+   0x400761:	jmpq   0x4006e0
+   0x400766:	push   %rbp
+   0x400767:	mov    %rsp,%rbp
+   0x40076a:	sub    $0x10,%rsp
+   0x40076e:	movl   $0x0,-0x4(%rbp)
+   0x400775:	jmp    0x40078a
+   0x400777:	mov    $0x400874,%esi
+   0x40077c:	mov    $0x600c80,%edi
+   0x400781:	
+    callq  0x400660 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x400786:	addl   $0x1,-0x4(%rbp)
+   0x40078a:	cmpl   $0x4,-0x4(%rbp)
+   0x40078e:	jle    0x400777
+   0x400790:	mov    $0x0,%eax
+   0x400795:	leaveq 
+   0x400796:	retq   
+   0x400797:	push   %rbp
+   0x400798:	mov    %rsp,%rbp
+   0x40079b:	sub    $0x10,%rsp
+   0x40079f:	mov    %edi,-0x4(%rbp)
+   0x4007a2:	mov    %esi,-0x8(%rbp)
+   0x4007a5:	cmpl   $0x1,-0x4(%rbp)
+   0x4007a9:	jne    0x4007d2
+   0x4007ab:	cmpl   $0xffff,-0x8(%rbp)
+   0x4007b2:	jne    0x4007d2
+   0x4007b4:	mov    $0x600d91,%edi
+   0x4007b9:	callq  0x400620 <_ZNSt8ios_base4InitC1Ev@plt>
+   0x4007be:	mov    $0x600c70,%edx
+   0x4007c3:	mov    $0x600d91,%esi
+   0x4007c8:	mov    $0x400650,%edi
+   0x4007cd:	callq  0x400640 <__cxa_atexit@plt>
+   0x4007d2:	leaveq 
+   0x4007d3:	retq   
+   0x4007d4:	push   %rbp
+   0x4007d5:	mov    %rsp,%rbp
+   0x4007d8:	mov    $0xffff,%esi
+   0x4007dd:	mov    $0x1,%edi
+   0x4007e2:	callq  0x400797
+   0x4007e7:	pop    %rbp
+   0x4007e8:	retq   
+   0x4007e9:	nopl   0x0(%rax)
+   0x4007f0:	push   %r15
+   0x4007f2:	mov    %edi,%r15d
+   0x4007f5:	push   %r14
+   0x4007f7:	mov    %rsi,%r14
+   0x4007fa:	push   %r13
+   0x4007fc:	mov    %rdx,%r13
+   0x4007ff:	push   %r12
+   0x400801:	lea    0x2001f0(%rip),%r12        # 0x6009f8
+   0x400808:	push   %rbp
+   0x400809:	lea    0x2001f8(%rip),%rbp        # 0x600a08
+   0x400810:	push   %rbx
+   0x400811:	sub    %r12,%rbp
+   0x400814:	xor    %ebx,%ebx
+   0x400816:	sar    $0x3,%rbp
+   0x40081a:	sub    $0x8,%rsp
+   0x40081e:	callq  0x4005e0
+   0x400823:	test   %rbp,%rbp
+   0x400826:	je     0x400846
+   0x400828:	nopl   0x0(%rax,%rax,1)
+   0x400830:	mov    %r13,%rdx
+   0x400833:	mov    %r14,%rsi
+   0x400836:	mov    %r15d,%edi
+   0x400839:	callq  *(%r12,%rbx,8)
+   0x40083d:	add    $0x1,%rbx
+   0x400841:	cmp    %rbp,%rbx
+   0x400844:	jne    0x400830
+   0x400846:	add    $0x8,%rsp
+   0x40084a:	pop    %rbx
+   0x40084b:	pop    %rbp
+   0x40084c:	pop    %r12
+   0x40084e:	pop    %r13
+   0x400850:	pop    %r14
+   0x400852:	pop    %r15
+   0x400854:	retq   
+   0x400855:	data32 nopw %cs:0x0(%rax,%rax,1)
+   0x400860:	repz retq 
+   0x400862:	add    %al,(%rax)
+   0x400864:	sub    $0x8,%rsp
+   0x400868:	add    $0x8,%rsp
+   0x40086c:	retq   
+   0x40086d:	add    %al,(%rax)
+   0x40086f:	add    %al,(%rcx)
+   0x400871:	add    %al,(%rdx)
+   0x400873:	add    %ch,0x65(%rax)
+   0x400876:	insb   (%dx),%es:(%rdi)
+   0x400877:	insb   (%dx),%es:(%rdi)
+   0x400878:	outsl  %ds:(%rsi),(%dx)
+   0x400879:	add    %al,(%rax)
+   0x40087b:	add    %al,(%rcx)
+   0x40087d:	sbb    (%rbx),%eax
+   0x40087f:	cmp    0x0(%rax),%eax
+   0x400882:	add    %al,(%rax)
+   0x400884:	(bad)  
+   0x400885:	add    %al,(%rax)
+   0x400887:	add    %al,0x8cffff(%rbp,%rdi,8)
+   0x40088e:	add    %al,(%rax)
+   0x400890:	hlt    
+   0x400891:	std    
+   0x400892:	(bad)  
+   0x400893:	lcallq *0x0(%rax,%rax,1)
+   0x400897:	add    %ch,%dl
+   0x400899:	(bad)  
+   0x40089a:	(bad)  
+   0x40089b:	pushq  -0xe50000(%rax,%rax,1)
+   0x4008a2:	(bad)  
+   0x4008a3:	callq  *%rsp
+   0x4008a5:	add    %al,(%rax)
+   0x4008a7:	add    %bl,-0x1(%rax)
+   0x4008aa:	(bad)  
+   0x4008ab:	push   %rsp
+   0x4008ad:	add    %al,(%rax)
+   0x4008af:	add    %dh,-0x1(%rdi,%rdi,8)
+   0x4008b3:	callq  *(%rcx,%rax,1)
+   0x4008b6:	add    %al,(%rax)
+   0x4008b8:	in     $0xff,%al
+   0x4008ba:	(bad)  
+   0x4008bb:	lcallq *0x0(%rcx,%rax,1)
+   0x4008bf:	add    %dl,(%rax,%rax,1)
+   0x4008c2:	add    %al,(%rax)
+   0x4008c4:	add    %al,(%rax)
+   0x4008c6:	add    %al,(%rax)
+   0x4008c8:	add    %edi,0x52(%rdx)
+   0x4008cb:	add    %al,(%rcx)
+   0x4008cd:	js     0x4008df
+   0x4008cf:	add    %ebx,(%rbx)
+   0x4008d1:	or     $0x7,%al
+   0x4008d3:	or     %dl,0x14100701(%rax)
+   0x4008d9:	add    %al,(%rax)
+   0x4008db:	add    %bl,(%rax,%rax,1)
+   0x4008de:	add    %al,(%rax)
+   0x4008e0:	nop
+   0x4008e1:	std    
+   0x4008e2:	(bad)  
+   0x4008e3:	ljmpq  *(%rdx)
+   0x4008e5:	add    %al,(%rax)
+   0x4008e7:	add    %al,(%rax)
+   0x4008e9:	add    %al,(%rax)
+   0x4008eb:	add    %al,(%rax)
+   0x4008ed:	add    %al,(%rax)
+   0x4008ef:	add    %dl,(%rax,%rax,1)
+   0x4008f2:	add    %al,(%rax)
+   0x4008f4:	add    %al,(%rax)
+   0x4008f6:	add    %al,(%rax)
+   0x4008f8:	add    %edi,0x52(%rdx)
+   0x4008fb:	add    %al,(%rcx)
+   0x4008fd:	js     0x40090f
+   0x4008ff:	add    %ebx,(%rbx)
+   0x400901:	or     $0x7,%al
+   0x400903:	or     %dl,0x24000001(%rax)
+   0x400909:	add    %al,(%rax)
+   0x40090b:	add    %bl,(%rax,%rax,1)
+   0x40090e:	add    %al,(%rax)
+   0x400910:	lock cld 
+   0x400912:	(bad)  
+   0x400913:	pushq  0x0(%rax)
+   0x400916:	add    %al,(%rax)
+   0x400918:	add    %cl,(%rsi)
+   0x40091a:	adc    %al,0xe(%rsi)
+   0x40091d:	sbb    %cl,0xf(%rdx)
+   0x400920:	or     0x8(%rdi),%esi
+   0x400923:	addb   $0x3f,(%rax)
+   0x400926:	sbb    (%rbx),%bh
+   0x400928:	sub    (%rbx),%dh
+   0x40092a:	and    $0x22,%al
+   0x40092c:	add    %al,(%rax)
+   0x40092e:	add    %al,(%rax)
+   0x400930:	sbb    $0x0,%al
+   0x400932:	add    %al,(%rax)
+   0x400934:	add    %r8b,(%rax)
+   0x400937:	add    %ch,(%rsi)
+   0x400939:	(bad)  
+   0x40093a:	(bad)  
+   0x40093b:	pushq  (%rcx)
+   0x40093d:	add    %al,(%rax)
+   0x40093f:	add    %al,(%rax)
+   0x400941:	rex.B (bad) 
+   0x400943:	adc    %al,0x60d4302(%rsi)
+   0x400949:	insb   (%dx),%es:(%rdi)
+   0x40094a:	or     $0x7,%al
+   0x40094c:	or     %al,(%rax)
+   0x40094e:	add    %al,(%rax)
+   0x400950:	sbb    $0x0,%al
+   0x400952:	add    %al,(%rax)
+   0x400954:	add    %al,%fs:(%rax)
+   0x400957:	add    %bh,(%rdi)
+   0x400959:	(bad)  
+   0x40095a:	(bad)  
+   0x40095b:	(bad)  
+   0x40095c:	cmp    $0x0,%eax
+   0x400961:	rex.B (bad) 
+   0x400963:	adc    %al,0x60d4302(%rsi)
+   0x400969:	js     0x400977
+   0x40096b:	(bad)  
+   0x40096c:	or     %al,(%rax)
+   0x40096e:	add    %al,(%rax)
+   0x400970:	sbb    $0x0,%al
+   0x400972:	add    %al,(%rax)
+   0x400974:	test   %al,(%rax)
+   0x400976:	add    %al,(%rax)
+   0x400978:	pop    %rsp
+   0x400979:	(bad)  
+   0x40097a:	(bad)  
+   0x40097b:	callq  *0x0(%rip)        # 0x400981
+   0x400981:	rex.B (bad) 
+   0x400983:	adc    %al,0x60d4302(%rsi)
+   0x400989:	push   %rax
+   0x40098a:	or     $0x7,%al
+   0x40098c:	or     %al,(%rax)
+   0x40098e:	add    %al,(%rax)
+   0x400990:	add    %r8b,(%rax)
+   0x400993:	add    %ah,-0x1a80000(%rax,%rax,1)
+   0x40099a:	(bad)  
+   0x40099b:	jmpq   *0x0(%rbp)
+   0x40099e:	add    %al,(%rax)
+   0x4009a0:	add    %al,0xe(%rdx)
+   0x4009a3:	adc    %cl,0x180e4502(%rdi)
+   0x4009a9:	mov    (%rbx),%es
+   0x4009ab:	rex.RB (bad) 
+   0x4009ad:	and    %cl,0x280e4504(%rbp)
+   0x4009b3:	mov    %es,-0x79cff1b8(%rip)        # 0xffffffff86701801
+   0x4009b9:	(bad)  
+   0x4009ba:	rex.W (bad) 
+   0x4009bc:	cmp    %al,0x400e4d07(%rbx)
+   0x4009c2:	insb   (%dx),%es:(%rdi)
+   0x4009c3:	(bad)  
+   0x4009c4:	cmp    %al,0xe(%rcx)
+   0x4009c7:	xor    %al,0xe(%rcx)
+   0x4009ca:	sub    %al,0xe(%rdx)
+   0x4009cd:	and    %al,0xe(%rdx)
+   0x4009d0:	sbb    %al,0xe(%rdx)
+   0x4009d3:	adc    %al,0xe(%rdx)
+   0x4009d6:	or     %al,(%rax)
+   0x4009d8:	adc    $0x0,%al
+   0x4009da:	add    %al,(%rax)
+   0x4009dc:	in     (%dx),%al
+   0x4009dd:	add    %al,(%rax)
+   0x4009df:	add    %al,0x2fffffe(%rax)
+   0x4009e5:	add    %al,(%rax)
+   0x4009e7:	add    %al,(%rax)
+   0x4009e9:	add    %al,(%rax)
+   0x4009eb:	add    %al,(%rax)
+   0x4009ed:	add    %al,(%rax)
+   0x4009ef:	add    %al,(%rax)
+   0x4009f1:	add    %al,(%rax)
+   0x4009f3:	add    %al,(%rax)
+   0x4009f5:	add    %al,(%rax)
+   0x4009f7:	add    %al,0x7(%rax)
+   0x4009fa:	add    %al,(%rax)
+   0x4009fd:	add    %al,(%rax)
+   0x4009ff:	add    %dl,%ah
+   0x400a01:	(bad)  
+   0x400a02:	add    %al,(%rax)
+   0x400a05:	add    %al,(%rax)
+   0x400a07:	add    %ah,(%rax)
+   0x400a09:	(bad)  
+   0x400a0a:	add    %al,(%rax)
+   0x400a0d:	add    %al,(%rax)
+   0x400a0f:	add    %al,(%rax)
+   0x400a11:	add    %al,(%rax)
+   0x400a13:	add    %al,(%rax)
+   0x400a15:	add    %al,(%rax)
+   0x400a17:	add    %al,(%rcx)
+   0x400a19:	add    %al,(%rax)
+   0x400a1b:	add    %al,(%rax)
+   0x400a1d:	add    %al,(%rax)
+   0x400a1f:	add    %al,(%rcx)
+   0x400a21:	add    %al,(%rax)
+   0x400a23:	add    %al,(%rax)
+   0x400a25:	add    %al,(%rax)
+   0x400a27:	add    %al,(%rcx)
+   0x400a29:	add    %al,(%rax)
+   0x400a2b:	add    %al,(%rax)
+   0x400a2d:	add    %al,(%rax)
+   0x400a2f:	add    %bl,%bl
+   0x400a31:	add    %al,(%rax)
+   0x400a33:	add    %al,(%rax)
+   0x400a35:	add    %al,(%rax)
+   0x400a37:	add    %al,(%rcx)
+   0x400a39:	add    %al,(%rax)
+   0x400a3b:	add    %al,(%rax)
+   0x400a3d:	add    %al,(%rax)
+   0x400a3f:	add    %ah,%ch
+   0x400a41:	add    %al,(%rax)
+   0x400a43:	add    %al,(%rax)
+   0x400a45:	add    %al,(%rax)
+   0x400a47:	add    %al,(%rcx)
+   0x400a49:	add    %al,(%rax)
+   0x400a4b:	add    %al,(%rax)
+   0x400a4d:	add    %al,(%rax)
+   0x400a4f:	add    %dh,%bl
+   0x400a51:	add    %al,(%rax)
+   0x400a53:	add    %al,(%rax)
+   0x400a55:	add    %al,(%rax)
+   0x400a57:	add    %cl,(%rax,%rax,1)
+   0x400a5a:	add    %al,(%rax)
+   0x400a5c:	add    %al,(%rax)
+   0x400a5e:	add    %al,(%rax)
+   0x400a60:	loopne 0x400a67
+   0x400a62:	add    %al,(%rax)
+   0x400a65:	add    %al,(%rax)
+   0x400a67:	add    %cl,0x0(%rip)        # 0x400a6d
+   0x400a6d:	add    %al,(%rax)
+   0x400a6f:	add    %ah,0x40(%rax,%rcx,1)
+   0x400a73:	add    %al,(%rax)
+   0x400a75:	add    %al,(%rax)
+   0x400a77:	add    %bl,(%rcx)
+   0x400a79:	add    %al,(%rax)
+   0x400a7b:	add    %al,(%rax)
+Quit
+Undefined command: "exit".  Try "help".
+A debugging session is active.
+
+	Inferior 1 [process 26572] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
+A debugging session is active.
+
+	Inferior 1 [process 26572] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
+A debugging session is active.
+
+	Inferior 1 [process 26572] will be killed.
+
+Quit anyway? (y or n) 

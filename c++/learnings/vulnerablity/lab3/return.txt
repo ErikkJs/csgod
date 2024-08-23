@@ -1,0 +1,22 @@
+Starting program: /home/stu/esoto/vulnerablity/lab3/returnfunction 
+[Inferior 1 (process 32228) exited normally]
+No frame selected.
+Temporary breakpoint 1 at 0x4006c5
+Starting program: /home/stu/esoto/vulnerablity/lab3/returnfunction 
+
+Temporary breakpoint 1, 0x00000000004006c5 in main ()
+Dump of assembler code for function main:
+   0x00000000004006c1 <+0>:	push   %rbp
+   0x00000000004006c2 <+1>:	mov    %rsp,%rbp
+=> 0x00000000004006c5 <+4>:	sub    $0x10,%rsp
+   0x00000000004006c9 <+8>:	callq  0x4006b6 <_Z6numberv>
+   0x00000000004006ce <+13>:	mov    %eax,-0x4(%rbp)
+   0x00000000004006d1 <+16>:	mov    $0x0,%eax
+   0x00000000004006d6 <+21>:	leaveq 
+   0x00000000004006d7 <+22>:	retq   
+End of assembler dump.
+A debugging session is active.
+
+	Inferior 1 [process 32303] will be killed.
+
+Quit anyway? (y or n) 

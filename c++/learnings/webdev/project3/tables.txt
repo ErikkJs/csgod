@@ -1,0 +1,60 @@
+
+mysql> select * from Products
+    -> ;
++---------+---------------------------------------+----------+---------------------------------------------+------------+-------------+----------+------------+
+| prod_id | prod_name                             | prod_img | prod_description                            | prod_price | prod_rating | prod_sku | prod_stock |
++---------+---------------------------------------+----------+---------------------------------------------+------------+-------------+----------+------------+
+|       1 | Greddy 21-677C Cold Air Intake        | 1.jpg    | 350z Airintakes FOR HR                      |     447.99 |           4 | 293939   |          1 |
+|       2 | Greddy 21-677P Cold Air Intake        | 2.jpg    | BRZ  Airintake                              |     474.99 |           3 | 930472   |          0 |
+|       3 | 350z 07-08 Twin Turbo Kit             | 3.jpg    | 350z HR engine model turbokit               |    1050.99 |           5 | 378924   |          1 |
+|       4 | GTR Titanium Race Exhaust             | 4.jpg    | Nissan GTR Exhaust System By Greddy         |    5495.00 |           5 | 749257   |          1 |
+|       5 | GTR Supreme TI Exhaust                | 5.jpg    | Nissan GTR Supreme Exhaust System By Greddy |    4495.00 |           3 | 129509   |          0 |
+|       6 | Nissan Silvia Type24F Intercooler Kit | 6.jpg    | Nissan Silvia Type24F Intercooler For Turbo |    1200.00 |           4 | 245233   |          1 |
++---------+---------------------------------------+----------+---------------------------------------------+------------+-------------+----------+------------+
+6 rows in set (0.00 sec)
+
+mysql>
+
+mysql> select * from Users
+    -> ;
++---------+------------+------------------+---------------+------------+
+| user_id | user_uname | user_email       | user_password | user_fname |
++---------+------------+------------------+---------------+------------+
+|       1 | test       | test@test.com    | testpassword  | testfname  |
+|       2 | erik       | esoto20@csub.edu | password      | NULL       |
++---------+------------+------------------+---------------+------------+
+2 rows in set (0.00 sec)
+
+mysql>
+
+mysql> desc Products;
++------------------+---------------------+------+-----+---------+----------------+
+| Field            | Type                | Null | Key | Default | Extra          |
++------------------+---------------------+------+-----+---------+----------------+
+| prod_id          | int(10) unsigned    | NO   | PRI | NULL    | auto_increment |
+| prod_name        | varchar(127)        | YES  |     | NULL    |                |
+| prod_img         | varchar(127)        | YES  |     | NULL    |                |
+| prod_description | varchar(511)        | YES  |     | NULL    |                |
+| prod_price       | decimal(10,2)       | YES  |     | NULL    |                |
+| prod_rating      | tinyint(3) unsigned | YES  |     | NULL    |                |
+| prod_sku         | char(32)            | YES  |     | NULL    |                |
+| prod_stock       | int(10) unsigned    | YES  |     | NULL    |                |
++------------------+---------------------+------+-----+---------+----------------+
+8 rows in set (0.00 sec)
+
+mysql>
+
+mysql> desc Users
+    -> ;
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| user_id       | int(11)      | NO   | PRI | NULL    | auto_increment |
+| user_uname    | varchar(255) | YES  |     | NULL    |                |
+| user_email    | varchar(255) | YES  |     | NULL    |                |
+| user_password | varchar(255) | YES  |     | NULL    |                |
+| user_fname    | varchar(255) | YES  |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+mysql>

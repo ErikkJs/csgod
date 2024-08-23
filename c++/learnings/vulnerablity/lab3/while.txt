@@ -1,0 +1,37 @@
+Starting program: /home/stu/esoto/vulnerablity/lab3/while 
+[Inferior 1 (process 4534) exited normally]
+Already logging to while.txt.
+Temporary breakpoint 1 at 0x40084a
+Starting program: /home/stu/esoto/vulnerablity/lab3/while 
+
+Temporary breakpoint 1, 0x000000000040084a in main ()
+Dump of assembler code for function main:
+   0x0000000000400846 <+0>:	push   %rbp
+   0x0000000000400847 <+1>:	mov    %rsp,%rbp
+=> 0x000000000040084a <+4>:	sub    $0x10,%rsp
+   0x000000000040084e <+8>:	movl   $0x0,-0x4(%rbp)
+   0x0000000000400855 <+15>:	jmp    0x400877 <main+49>
+   0x0000000000400857 <+17>:	mov    $0x400964,%esi
+   0x000000000040085c <+22>:	mov    $0x600d80,%edi
+   0x0000000000400861 <+27>:	callq  0x400720 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000400866 <+32>:	mov    $0x400740,%esi
+   0x000000000040086b <+37>:	mov    %rax,%rdi
+   0x000000000040086e <+40>:	callq  0x400730 <_ZNSolsEPFRSoS_E@plt>
+   0x0000000000400873 <+45>:	addl   $0x1,-0x4(%rbp)
+   0x0000000000400877 <+49>:	cmpl   $0x9,-0x4(%rbp)
+   0x000000000040087b <+53>:	jle    0x400857 <main+17>
+   0x000000000040087d <+55>:	mov    $0x0,%eax
+   0x0000000000400882 <+60>:	leaveq 
+   0x0000000000400883 <+61>:	retq   
+End of assembler dump.
+A debugging session is active.
+
+	Inferior 1 [process 4761] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
+Undefined command: "strip".  Try "help".
+A debugging session is active.
+
+	Inferior 1 [process 4761] will be killed.
+
+Quit anyway? (y or n) 

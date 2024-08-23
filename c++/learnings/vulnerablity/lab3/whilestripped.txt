@@ -1,0 +1,163 @@
+=> 0x400750:	xor    %ebp,%ebp
+   0x400752:	mov    %rdx,%r9
+   0x400755:	pop    %rsi
+   0x400756:	mov    %rsp,%rdx
+   0x400759:	and    $0xfffffffffffffff0,%rsp
+   0x40075d:	push   %rax
+   0x40075e:	push   %rsp
+   0x40075f:	mov    $0x400950,%r8
+   0x400766:	mov    $0x4008e0,%rcx
+   0x40076d:	mov    $0x400846,%rdi
+   0x400774:	callq  0x4006f0 <__libc_start_main@plt>
+   0x400779:	hlt    
+   0x40077a:	nopw   0x0(%rax,%rax,1)
+   0x400780:	mov    $0x600d7f,%eax
+   0x400785:	push   %rbp
+   0x400786:	sub    $0x600d78,%rax
+   0x40078c:	cmp    $0xe,%rax
+   0x400790:	mov    %rsp,%rbp
+   0x400793:	jbe    0x4007b0
+   0x400795:	mov    $0x0,%eax
+   0x40079a:	test   %rax,%rax
+   0x40079d:	je     0x4007b0
+   0x40079f:	pop    %rbp
+   0x4007a0:	mov    $0x600d78,%edi
+   0x4007a5:	jmpq   *%rax
+   0x4007a7:	nopw   0x0(%rax,%rax,1)
+   0x4007b0:	pop    %rbp
+   0x4007b1:	retq   
+   0x4007b2:	data32 data32 data32 data32 nopw %cs:0x0(%rax,%rax,1)
+   0x4007c0:	mov    $0x600d78,%esi
+   0x4007c5:	push   %rbp
+   0x4007c6:	sub    $0x600d78,%rsi
+   0x4007cd:	sar    $0x3,%rsi
+   0x4007d1:	mov    %rsp,%rbp
+   0x4007d4:	mov    %rsi,%rax
+   0x4007d7:	shr    $0x3f,%rax
+   0x4007db:	add    %rax,%rsi
+   0x4007de:	sar    %rsi
+   0x4007e1:	je     0x4007f8
+   0x4007e3:	mov    $0x0,%eax
+   0x4007e8:	test   %rax,%rax
+   0x4007eb:	je     0x4007f8
+   0x4007ed:	pop    %rbp
+   0x4007ee:	mov    $0x600d78,%edi
+   0x4007f3:	jmpq   *%rax
+   0x4007f5:	nopl   (%rax)
+   0x4007f8:	pop    %rbp
+   0x4007f9:	retq   
+   0x4007fa:	nopw   0x0(%rax,%rax,1)
+   0x400800:	cmpb   $0x0,0x200689(%rip)        # 0x600e90
+   0x400807:	jne    0x40081a
+   0x400809:	push   %rbp
+   0x40080a:	mov    %rsp,%rbp
+   0x40080d:	callq  0x400780
+   0x400812:	pop    %rbp
+   0x400813:	movb   $0x1,0x200676(%rip)        # 0x600e90
+   0x40081a:	repz retq 
+   0x40081c:	nopl   0x0(%rax)
+   0x400820:	mov    $0x600b00,%edi
+   0x400825:	cmpq   $0x0,(%rdi)
+   0x400829:	jne    0x400830
+   0x40082b:	jmp    0x4007c0
+   0x40082d:	nopl   (%rax)
+   0x400830:	mov    $0x0,%eax
+   0x400835:	test   %rax,%rax
+   0x400838:	je     0x40082b
+   0x40083a:	push   %rbp
+   0x40083b:	mov    %rsp,%rbp
+   0x40083e:	callq  *%rax
+   0x400840:	pop    %rbp
+   0x400841:	jmpq   0x4007c0
+   0x400846:	push   %rbp
+   0x400847:	mov    %rsp,%rbp
+   0x40084a:	sub    $0x10,%rsp
+   0x40084e:	movl   $0x0,-0x4(%rbp)
+   0x400855:	jmp    0x400877
+   0x400857:	mov    $0x400964,%esi
+   0x40085c:	mov    $0x600d80,%edi
+   0x400861:	
+    callq  0x400720 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x400866:	mov    $0x400740,%esi
+   0x40086b:	mov    %rax,%rdi
+   0x40086e:	callq  0x400730 <_ZNSolsEPFRSoS_E@plt>
+   0x400873:	addl   $0x1,-0x4(%rbp)
+   0x400877:	cmpl   $0x9,-0x4(%rbp)
+   0x40087b:	jle    0x400857
+   0x40087d:	mov    $0x0,%eax
+   0x400882:	leaveq 
+   0x400883:	retq   
+   0x400884:	push   %rbp
+   0x400885:	mov    %rsp,%rbp
+   0x400888:	sub    $0x10,%rsp
+   0x40088c:	mov    %edi,-0x4(%rbp)
+   0x40088f:	mov    %esi,-0x8(%rbp)
+   0x400892:	cmpl   $0x1,-0x4(%rbp)
+   0x400896:	jne    0x4008bf
+   0x400898:	cmpl   $0xffff,-0x8(%rbp)
+   0x40089f:	jne    0x4008bf
+   0x4008a1:	mov    $0x600e91,%edi
+   0x4008a6:	callq  0x4006e0 <_ZNSt8ios_base4InitC1Ev@plt>
+   0x4008ab:	mov    $0x600d70,%edx
+   0x4008b0:	mov    $0x600e91,%esi
+   0x4008b5:	mov    $0x400710,%edi
+   0x4008ba:	callq  0x400700 <__cxa_atexit@plt>
+   0x4008bf:	leaveq 
+   0x4008c0:	retq   
+   0x4008c1:	push   %rbp
+   0x4008c2:	mov    %rsp,%rbp
+   0x4008c5:	mov    $0xffff,%esi
+   0x4008ca:	mov    $0x1,%edi
+   0x4008cf:	callq  0x400884
+   0x4008d4:	pop    %rbp
+   0x4008d5:	retq   
+   0x4008d6:	nopw   %cs:0x0(%rax,%rax,1)
+   0x4008e0:	push   %r15
+   0x4008e2:	mov    %edi,%r15d
+   0x4008e5:	push   %r14
+   0x4008e7:	mov    %rsi,%r14
+   0x4008ea:	push   %r13
+   0x4008ec:	mov    %rdx,%r13
+   0x4008ef:	push   %r12
+   0x4008f1:	lea    0x2001f0(%rip),%r12        # 0x600ae8
+   0x4008f8:	push   %rbp
+   0x4008f9:	lea    0x2001f8(%rip),%rbp        # 0x600af8
+   0x400900:	push   %rbx
+   0x400901:	sub    %r12,%rbp
+   0x400904:	xor    %ebx,%ebx
+   0x400906:	sar    $0x3,%rbp
+   0x40090a:	sub    $0x8,%rsp
+   0x40090e:	callq  0x400698
+   0x400913:	test   %rbp,%rbp
+   0x400916:	je     0x400936
+   0x400918:	nopl   0x0(%rax,%rax,1)
+   0x400920:	mov    %r13,%rdx
+   0x400923:	mov    %r14,%rsi
+   0x400926:	mov    %r15d,%edi
+   0x400929:	callq  *(%r12,%rbx,8)
+   0x40092d:	add    $0x1,%rbx
+   0x400931:	cmp    %rbp,%rbx
+   0x400934:	jne    0x400920
+   0x400936:	add    $0x8,%rsp
+   0x40093a:	pop    %rbx
+   0x40093b:	pop    %rbp
+   0x40093c:	pop    %r12
+   0x40093e:	pop    %r13
+   0x400940:	pop    %r14
+   0x400942:	pop    %r15
+   0x400944:	retq   
+   0x400945:	data32 nopw %cs:0x0(%rax,%rax,1)
+   0x400950:	repz retq 
+   0x400952:	add    %al,(%rax)
+Quit
+Value can't be converted to integer.
+A debugging session is active.
+
+	Inferior 1 [process 6043] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
+A debugging session is active.
+
+	Inferior 1 [process 6043] will be killed.
+
+Quit anyway? (y or n) 
