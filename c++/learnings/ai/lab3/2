@@ -1,0 +1,18 @@
+item(a,1).
+item(b,.7).
+item(c,.75).
+item(d,.8).
+item(e,.5).
+item(m,-1.0).
+
+min(X,Y,X):-X<Y, ! .  
+min(X,Y,X):-Y<X, ! .  
+min(X,Y,Z,Y): Z<Y,Z<X ,!.
+min(X,Y,Z,Y): X<Y,X<Z ,!.
+min(X,Y,Z,Y): Y<X,Y<Z ,!.
+
+item(z) :- item(y), item(d).
+item(y) :- item(x), item(b), item(e).
+item(x) :- item(a).
+item(l) :- item(c).
+item(n) :- item(l), item(m).

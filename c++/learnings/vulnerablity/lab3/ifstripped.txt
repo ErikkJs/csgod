@@ -1,0 +1,91 @@
+Argument required (starting display address).
+=> 0x400670:	xor    %ebp,%ebp
+   0x400672:	mov    %rdx,%r9
+   0x400675:	pop    %rsi
+   0x400676:	mov    %rsp,%rdx
+   0x400679:	and    $0xfffffffffffffff0,%rsp
+=> 0x400670:	xor    %ebp,%ebp
+   0x400672:	mov    %rdx,%r9
+   0x400675:	pop    %rsi
+   0x400676:	mov    %rsp,%rdx
+   0x400679:	and    $0xfffffffffffffff0,%rsp
+   0x40067d:	push   %rax
+   0x40067e:	push   %rsp
+   0x40067f:	mov    $0x400850,%r8
+   0x400686:	mov    $0x4007e0,%rcx
+   0x40068d:	mov    $0x400766,%rdi
+=> 0x400670:	xor    %ebp,%ebp
+   0x400672:	mov    %rdx,%r9
+   0x400675:	pop    %rsi
+   0x400676:	mov    %rsp,%rdx
+   0x400679:	and    $0xfffffffffffffff0,%rsp
+   0x40067d:	push   %rax
+   0x40067e:	push   %rsp
+   0x40067f:	mov    $0x400850,%r8
+   0x400686:	mov    $0x4007e0,%rcx
+   0x40068d:	mov    $0x400766,%rdi
+   0x400694:	callq  0x400630 <__libc_start_main@plt>
+   0x400699:	hlt    
+   0x40069a:	nopw   0x0(%rax,%rax,1)
+   0x4006a0:	mov    $0x600c6f,%eax
+   0x4006a5:	push   %rbp
+   0x4006a6:	sub    $0x600c68,%rax
+   0x4006ac:	cmp    $0xe,%rax
+   0x4006b0:	mov    %rsp,%rbp
+   0x4006b3:	jbe    0x4006d0
+   0x4006b5:	mov    $0x0,%eax
+=> 0x400670:	xor    %ebp,%ebp
+   0x400672:	mov    %rdx,%r9
+   0x400675:	pop    %rsi
+   0x400676:	mov    %rsp,%rdx
+   0x400679:	and    $0xfffffffffffffff0,%rsp
+   0x40067d:	push   %rax
+   0x40067e:	push   %rsp
+   0x40067f:	mov    $0x400850,%r8
+   0x400686:	mov    $0x4007e0,%rcx
+   0x40068d:	mov    $0x400766,%rdi
+   0x400694:	callq  0x400630 <__libc_start_main@plt>
+   0x400699:	hlt    
+   0x40069a:	nopw   0x0(%rax,%rax,1)
+   0x4006a0:	mov    $0x600c6f,%eax
+   0x4006a5:	push   %rbp
+   0x4006a6:	sub    $0x600c68,%rax
+   0x4006ac:	cmp    $0xe,%rax
+   0x4006b0:	mov    %rsp,%rbp
+   0x4006b3:	jbe    0x4006d0
+   0x4006b5:	mov    $0x0,%eax
+   0x4006ba:	test   %rax,%rax
+   0x4006bd:	je     0x4006d0
+   0x4006bf:	pop    %rbp
+   0x4006c0:	mov    $0x600c68,%edi
+   0x4006c5:	jmpq   *%rax
+   0x4006c7:	nopw   0x0(%rax,%rax,1)
+   0x4006d0:	pop    %rbp
+   0x4006d1:	retq   
+   0x4006d2:	data32 data32 data32 data32 nopw %cs:0x0(%rax,%rax,1)
+   0x4006e0:	mov    $0x600c68,%esi
+   0x4006e5:	push   %rbp
+   0x4006e6:	sub    $0x600c68,%rsi
+   0x4006ed:	sar    $0x3,%rsi
+   0x4006f1:	mov    %rsp,%rbp
+   0x4006f4:	mov    %rsi,%rax
+   0x4006f7:	shr    $0x3f,%rax
+   0x4006fb:	add    %rax,%rsi
+   0x4006fe:	sar    %rsi
+   0x400701:	je     0x400718
+   0x400703:	mov    $0x0,%eax
+   0x400708:	test   %rax,%rax
+   0x40070b:	je     0x400718
+   0x40070d:	pop    %rbp
+   0x40070e:	mov    $0x600c68,%edi
+   0x400713:	jmpq   *%rax
+   0x400715:	nopl   (%rax)
+   0x400718:	pop    %rbp
+   0x400719:	retq   
+   0x40071a:	nopw   0x0(%rax,%rax,1)
+   0x400720:	cmpb   $0x0,0x200669(%rip)        # 0x600d90
+A debugging session is active.
+
+	Inferior 1 [process 29126] will be killed.
+
+Quit anyway? (y or n) 

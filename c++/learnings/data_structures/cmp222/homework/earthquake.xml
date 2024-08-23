@@ -1,0 +1,13 @@
+?xml version= "1.0" encoding=  " UTF-8" ?>
+<earthquake>
+  <events count= "1" desc= "largest>" >
+    <event>
+      <latitude>-16.4854</latitude>
+      <longitude> -73.6362</longitude>
+      <depth> 10.37 </depth>
+      <mag>5.4 </mag>
+      <location>us</location>
+      <id us200050iw</id>
+    </event>
+  </events>
+</earthquake>

@@ -1,0 +1,3 @@
+problem 1: For problem one i added a boolean variable that was flipped in the signal handlers function.
+
+problem 2: For this ia counted the seconds the program was running for using the built in clock() function. finding the time was used by saving the start point and subtracted it from endtime. i then divided that by CLOCKS_PER_SEC. 

@@ -1,0 +1,25 @@
+legend{
+	text-align: center;
+	font-size: 20px;
+}
+table{
+}
+body{
+	font-size: 12px;
+}
+#question{
+	text-align: left;
+	min-width: 50%;
+	padding: 5px;
+}
+body{
+	background-color: white;
+
+}
+.container{
+	color: black;
+
+}
+#score{
+	color: black;
+}

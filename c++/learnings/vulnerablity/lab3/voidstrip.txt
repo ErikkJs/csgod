@@ -1,0 +1,167 @@
+=> 0x400670:	xor    %ebp,%ebp
+   0x400672:	mov    %rdx,%r9
+   0x400675:	pop    %rsi
+   0x400676:	mov    %rsp,%rdx
+   0x400679:	and    $0xfffffffffffffff0,%rsp
+   0x40067d:	push   %rax
+   0x40067e:	push   %rsp
+   0x40067f:	mov    $0x400850,%r8
+   0x400686:	mov    $0x4007e0,%rcx
+   0x40068d:	mov    $0x40077b,%rdi
+   0x400694:	callq  0x400630 <__libc_start_main@plt>
+   0x400699:	hlt    
+   0x40069a:	nopw   0x0(%rax,%rax,1)
+   0x4006a0:	mov    $0x600c9f,%eax
+   0x4006a5:	push   %rbp
+   0x4006a6:	sub    $0x600c98,%rax
+   0x4006ac:	cmp    $0xe,%rax
+   0x4006b0:	mov    %rsp,%rbp
+   0x4006b3:	jbe    0x4006d0
+   0x4006b5:	mov    $0x0,%eax
+   0x4006ba:	test   %rax,%rax
+   0x4006bd:	je     0x4006d0
+   0x4006bf:	pop    %rbp
+   0x4006c0:	mov    $0x600c98,%edi
+   0x4006c5:	jmpq   *%rax
+   0x4006c7:	nopw   0x0(%rax,%rax,1)
+   0x4006d0:	pop    %rbp
+   0x4006d1:	retq   
+   0x4006d2:	data32 data32 data32 data32 nopw %cs:0x0(%rax,%rax,1)
+   0x4006e0:	mov    $0x600c98,%esi
+   0x4006e5:	push   %rbp
+   0x4006e6:	sub    $0x600c98,%rsi
+   0x4006ed:	sar    $0x3,%rsi
+   0x4006f1:	mov    %rsp,%rbp
+   0x4006f4:	mov    %rsi,%rax
+   0x4006f7:	shr    $0x3f,%rax
+   0x4006fb:	add    %rax,%rsi
+   0x4006fe:	sar    %rsi
+   0x400701:	je     0x400718
+   0x400703:	mov    $0x0,%eax
+   0x400708:	test   %rax,%rax
+   0x40070b:	je     0x400718
+   0x40070d:	pop    %rbp
+   0x40070e:	mov    $0x600c98,%edi
+   0x400713:	jmpq   *%rax
+   0x400715:	nopl   (%rax)
+   0x400718:	pop    %rbp
+   0x400719:	retq   
+   0x40071a:	nopw   0x0(%rax,%rax,1)
+   0x400720:	cmpb   $0x0,0x2006a9(%rip)        # 0x600dd0
+   0x400727:	jne    0x40073a
+   0x400729:	push   %rbp
+   0x40072a:	mov    %rsp,%rbp
+   0x40072d:	callq  0x4006a0
+   0x400732:	pop    %rbp
+   0x400733:	movb   $0x1,0x200696(%rip)        # 0x600dd0
+   0x40073a:	repz retq 
+   0x40073c:	nopl   0x0(%rax)
+   0x400740:	mov    $0x600a30,%edi
+   0x400745:	cmpq   $0x0,(%rdi)
+   0x400749:	jne    0x400750
+   0x40074b:	jmp    0x4006e0
+   0x40074d:	nopl   (%rax)
+   0x400750:	mov    $0x0,%eax
+   0x400755:	test   %rax,%rax
+   0x400758:	je     0x40074b
+   0x40075a:	push   %rbp
+   0x40075b:	mov    %rsp,%rbp
+   0x40075e:	callq  *%rax
+   0x400760:	pop    %rbp
+   0x400761:	jmpq   0x4006e0
+   0x400766:	push   %rbp
+   0x400767:	mov    %rsp,%rbp
+   0x40076a:	mov    $0x400864,%esi
+   0x40076f:	mov    $0x600cc0,%edi
+   0x400774:	
+    callq  0x400660 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x400779:	pop    %rbp
+   0x40077a:	retq   
+   0x40077b:	push   %rbp
+   0x40077c:	mov    %rsp,%rbp
+   0x40077f:	callq  0x400766
+   0x400784:	mov    $0x0,%eax
+   0x400789:	pop    %rbp
+   0x40078a:	retq   
+   0x40078b:	push   %rbp
+   0x40078c:	mov    %rsp,%rbp
+   0x40078f:	sub    $0x10,%rsp
+   0x400793:	mov    %edi,-0x4(%rbp)
+   0x400796:	mov    %esi,-0x8(%rbp)
+   0x400799:	cmpl   $0x1,-0x4(%rbp)
+   0x40079d:	jne    0x4007c6
+   0x40079f:	cmpl   $0xffff,-0x8(%rbp)
+   0x4007a6:	jne    0x4007c6
+   0x4007a8:	mov    $0x600dd1,%edi
+   0x4007ad:	callq  0x400620 <_ZNSt8ios_base4InitC1Ev@plt>
+   0x4007b2:	mov    $0x600c90,%edx
+   0x4007b7:	mov    $0x600dd1,%esi
+   0x4007bc:	mov    $0x400650,%edi
+   0x4007c1:	callq  0x400640 <__cxa_atexit@plt>
+   0x4007c6:	leaveq 
+   0x4007c7:	retq   
+   0x4007c8:	push   %rbp
+   0x4007c9:	mov    %rsp,%rbp
+   0x4007cc:	mov    $0xffff,%esi
+   0x4007d1:	mov    $0x1,%edi
+   0x4007d6:	callq  0x40078b
+   0x4007db:	pop    %rbp
+   0x4007dc:	retq   
+   0x4007dd:	nopl   (%rax)
+   0x4007e0:	push   %r15
+   0x4007e2:	mov    %edi,%r15d
+   0x4007e5:	push   %r14
+   0x4007e7:	mov    %rsi,%r14
+   0x4007ea:	push   %r13
+   0x4007ec:	mov    %rdx,%r13
+   0x4007ef:	push   %r12
+   0x4007f1:	lea    0x200220(%rip),%r12        # 0x600a18
+   0x4007f8:	push   %rbp
+   0x4007f9:	lea    0x200228(%rip),%rbp        # 0x600a28
+   0x400800:	push   %rbx
+   0x400801:	sub    %r12,%rbp
+   0x400804:	xor    %ebx,%ebx
+   0x400806:	sar    $0x3,%rbp
+   0x40080a:	sub    $0x8,%rsp
+   0x40080e:	callq  0x4005e0
+   0x400813:	test   %rbp,%rbp
+   0x400816:	je     0x400836
+   0x400818:	nopl   0x0(%rax,%rax,1)
+   0x400820:	mov    %r13,%rdx
+   0x400823:	mov    %r14,%rsi
+   0x400826:	mov    %r15d,%edi
+   0x400829:	callq  *(%r12,%rbx,8)
+   0x40082d:	add    $0x1,%rbx
+   0x400831:	cmp    %rbp,%rbx
+   0x400834:	jne    0x400820
+   0x400836:	add    $0x8,%rsp
+   0x40083a:	pop    %rbx
+   0x40083b:	pop    %rbp
+   0x40083c:	pop    %r12
+   0x40083e:	pop    %r13
+   0x400840:	pop    %r14
+   0x400842:	pop    %r15
+   0x400844:	retq   
+   0x400845:	data32 nopw %cs:0x0(%rax,%rax,1)
+   0x400850:	repz retq 
+   0x400852:	add    %al,(%rax)
+   0x400854:	sub    $0x8,%rsp
+   0x400858:	add    $0x8,%rsp
+   0x40085c:	retq   
+   0x40085d:	add    %al,(%rax)
+Quit
+A debugging session is active.
+
+	Inferior 1 [process 12549] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
+A debugging session is active.
+
+	Inferior 1 [process 12549] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
+A debugging session is active.
+
+	Inferior 1 [process 12549] will be killed.
+
+Quit anyway? (y or n) 

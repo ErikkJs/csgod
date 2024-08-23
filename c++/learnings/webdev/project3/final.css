@@ -1,0 +1,139 @@
+#stuff{
+  color: white;
+  text-align: center;
+}
+#stock{
+  color: green;
+
+}
+#titl{
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+#con{
+  background-color: transparent;
+}
+#nstock{
+  color: red;
+}
+.btn-group-sm > .btn, .btn-sm{
+  float:right;
+  background-color: white;
+}
+#form{
+  color: black;
+}
+  .jumbotron .h1, .jumbotron h1{
+    font-weight: bold;
+  }
+
+  .panel-primary>.panel-heading{
+    background-color: black;
+    border-color: black;
+    color:white;
+    text-align: center;
+  }
+  .panel-default{
+    background: rgb(84, 83, 80); /* This is for ie8 and below */
+      background: rgba(84, 83, 80, 0.5);
+  }
+  .panel-body {
+    padding: 15px;
+    background-color: black;
+    border-color: black;
+
+  }
+  .panel {
+    margin-bottom: 20px;
+    background: rgba(00 00, 00, 0.5);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: black;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+  .panel-footer {
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    border-top: 1px solid black;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+    #col-sm-4{
+      border-color: black;
+      background-color: black;
+  }
+
+  #item{
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      border-color: black;
+      background-color: black;
+    }
+    #itemheader{
+      background-color: black;
+      color:red;
+
+    }
+    #contact{
+   
+     
+    }
+    #header{
+      background-color: black;
+      color: red;
+      font-size: 24px;
+      text-align: center;
+    }
+    #info{
+      margin-left: 25%;
+      
+    }
+    #content{
+      
+      color: white;
+      background: rgba(00, 00, 00, 0.5);
+
+    }
+     #footer{
+      background: rgb(84, 83, 80); /* This is for ie8 and below */
+      background: rgba(84, 83, 80, 0.5)
+      color: white;
+      font-size: 15px;
+      text-align: center;
+    }
+    .navbar{
+      border-radius: 0;
+      background-color: black;
+    
+      color:white;
+    }
+     
+     .jumbotron {
+      margin-bottom: 0;
+      background: rgb(84, 83, 80); /* This is for ie8 and below */
+      background: rgba(84, 83, 80, 0.5); 
+
+      font-weight: bolder;
+      color: #fff;
+      height: 200px;
+      opacity:
+
+    }
+    #body{
+    	height: auto;
+       background-image: url('background.jpg');
+       background-attachment:fixed;
+       background-repeat:;
+     }
+       
+    /* Add a gray background color and some padding to the footer */
+     #footer {
+      background-color:black;
+      color: white;
+      padding: 25px;
+      }

@@ -1,0 +1,15 @@
+Dump of assembler code for function main:
+   0x0000000000400766 <+0>:	push   %rbp
+   0x0000000000400767 <+1>:	mov    %rsp,%rbp
+=> 0x000000000040076a <+4>:	mov    $0x400864,%esi
+   0x000000000040076f <+9>:	mov    $0x600c80,%edi
+   0x0000000000400774 <+14>:	callq  0x400660 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+   0x0000000000400779 <+19>:	mov    $0x0,%eax
+   0x000000000040077e <+24>:	pop    %rbp
+   0x000000000040077f <+25>:	retq   
+End of assembler dump.
+A debugging session is active.
+
+	Inferior 1 [process 27095] will be killed.
+
+Quit anyway? (y or n) 

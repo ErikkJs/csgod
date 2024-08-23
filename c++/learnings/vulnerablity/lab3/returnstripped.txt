@@ -1,0 +1,77 @@
+=> 0x4005c0:	xor    %ebp,%ebp
+   0x4005c2:	mov    %rdx,%r9
+   0x4005c5:	pop    %rsi
+   0x4005c6:	mov    %rsp,%rdx
+   0x4005c9:	and    $0xfffffffffffffff0,%rsp
+   0x4005cd:	push   %rax
+   0x4005ce:	push   %rsp
+   0x4005cf:	mov    $0x4007a0,%r8
+   0x4005d6:	mov    $0x400730,%rcx
+   0x4005dd:	mov    $0x4006c1,%rdi
+   0x4005e4:	callq  0x400590 <__libc_start_main@plt>
+   0x4005e9:	hlt    
+   0x4005ea:	nopw   0x0(%rax,%rax,1)
+   0x4005f0:	mov    $0x600bd7,%eax
+   0x4005f5:	push   %rbp
+   0x4005f6:	sub    $0x600bd0,%rax
+   0x4005fc:	cmp    $0xe,%rax
+   0x400600:	mov    %rsp,%rbp
+   0x400603:	jbe    0x400620
+   0x400605:	mov    $0x0,%eax
+   0x40060a:	test   %rax,%rax
+   0x40060d:	je     0x400620
+   0x40060f:	pop    %rbp
+   0x400610:	mov    $0x600bd0,%edi
+   0x400615:	jmpq   *%rax
+   0x400617:	nopw   0x0(%rax,%rax,1)
+   0x400620:	pop    %rbp
+   0x400621:	retq   
+   0x400622:	data32 data32 data32 data32 nopw %cs:0x0(%rax,%rax,1)
+   0x400630:	mov    $0x600bd0,%esi
+   0x400635:	push   %rbp
+   0x400636:	sub    $0x600bd0,%rsi
+   0x40063d:	sar    $0x3,%rsi
+   0x400641:	mov    %rsp,%rbp
+   0x400644:	mov    %rsi,%rax
+   0x400647:	shr    $0x3f,%rax
+   0x40064b:	add    %rax,%rsi
+   0x40064e:	sar    %rsi
+   0x400651:	je     0x400668
+   0x400653:	mov    $0x0,%eax
+   0x400658:	test   %rax,%rax
+   0x40065b:	je     0x400668
+   0x40065d:	pop    %rbp
+   0x40065e:	mov    $0x600bd0,%edi
+   0x400663:	jmpq   *%rax
+   0x400665:	nopl   (%rax)
+   0x400668:	pop    %rbp
+   0x400669:	retq   
+   0x40066a:	nopw   0x0(%rax,%rax,1)
+   0x400670:	cmpb   $0x0,0x200559(%rip)        # 0x600bd0
+   0x400677:	jne    0x40068a
+   0x400679:	push   %rbp
+   0x40067a:	mov    %rsp,%rbp
+   0x40067d:	callq  0x4005f0
+   0x400682:	pop    %rbp
+   0x400683:	movb   $0x1,0x200546(%rip)        # 0x600bd0
+   0x40068a:	repz retq 
+   0x40068c:	nopl   0x0(%rax)
+   0x400690:	mov    $0x600970,%edi
+   0x400695:	cmpq   $0x0,(%rdi)
+   0x400699:	jne    0x4006a0
+   0x40069b:	jmp    0x400630
+   0x40069d:	nopl   (%rax)
+   0x4006a0:	mov    $0x0,%eax
+   0x4006a5:	test   %rax,%rax
+   0x4006a8:	je     0x40069b
+   0x4006aa:	push   %rbp
+   0x4006ab:	mov    %rsp,%rbp
+   0x4006ae:	callq  *%rax
+   0x4006b0:	pop    %rbp
+   0x4006b1:	jmpq   0x400630
+   0x4006b6:	push   %rbp
+   0x4006b7:	mov    %rsp,%rbp
+   0x4006ba:	mov    $0x1,%eax
+   0x4006bf:	pop    %rbp
+   0x4006c0:	retq   
+Quit

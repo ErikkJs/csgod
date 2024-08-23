@@ -1,0 +1,25 @@
+Starting program: /home/stu/esoto/vulnerablity/lab3/void 
+[Inferior 1 (process 10136) exited normally]
+Temporary breakpoint 1 at 0x40077f
+Starting program: /home/stu/esoto/vulnerablity/lab3/void 
+
+Temporary breakpoint 1, 0x000000000040077f in main ()
+Breakpoint 2 at 0x40077f
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Temporary breakpoint 3 at 0x40077f
+Starting program: /home/stu/esoto/vulnerablity/lab3/void 
+
+Breakpoint 2, 0x000000000040077f in main ()
+Dump of assembler code for function main:
+   0x000000000040077b <+0>:	push   %rbp
+   0x000000000040077c <+1>:	mov    %rsp,%rbp
+=> 0x000000000040077f <+4>:	callq  0x400766 <_Z3usev>
+   0x0000000000400784 <+9>:	mov    $0x0,%eax
+   0x0000000000400789 <+14>:	pop    %rbp
+   0x000000000040078a <+15>:	retq   
+End of assembler dump.
+A debugging session is active.
+
+	Inferior 1 [process 10586] will be killed.
+
+Quit anyway? (y or n) 

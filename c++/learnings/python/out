@@ -1,0 +1,14 @@
+PART I
+original list:  [3, 11, 15, 20, 0, 17]
+odds:    [3, 11, 15, 17]
+squared: [9, 121, 225, 400, 0, 289]
+mean:    13.2
+PART II
+Producer starting.
+Consumer starting.
+wash,22 dry,33 fold,44 
+ADD iron,44 
+wash,22 dry,33 fold,44 iron,44 
+REMOVE iron
+fold,44 wash,22 dry,33 
+Producer Done.
