@@ -1,0 +1,21 @@
+# Ignore object files
+*.o
+
+# Ignore executable files
+*.exe
+*.out
+*.app  # For macOS
+
+# Ignore other binaries
+*.dll
+*.so  # Shared objects on Linux
+*.dylib  # macOS dynamic libraries
+
+# Ignore build directories
+/build/
+/bin/
+/obj/
+
+# Ignore generated files
+*.gch
+*.pyc
