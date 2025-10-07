@@ -19,3 +19,34 @@
 # Ignore generated files
 *.gch
 *.pyc
+
+# LaTeX generated files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+
+# LaTeX temp directories
+.fuse_hidden*
+
+# LaTeX editor files
+*.backup
+*.swp
+*.swo
+*~
+
+# PDF output (keep source, ignore compiled PDFs for now)
+*.pdf
