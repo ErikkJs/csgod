@@ -4,7 +4,7 @@ Undergrad CS coursework, grouped by subject. Folder names are kept as they were 
 
 | Subject | What it covers | Languages |
 |---------|----------------|-----------|
-| [`OS`](OS/) | Operating Systems (CMPS 3600) — processes, signals, POSIX threads & synchronization | C, C++ |
+| [`operating-systems`](operating-systems/) | Operating Systems (CMPS 3600) — processes, signals, POSIX threads & synchronization | C, C++ |
 | [`ai`](ai/) | Artificial Intelligence (CMPS 3560) — C++ agents + Prolog symbolic AI (`other/` is a separate Prolog track) | C++, Prolog |
 | [`assembly`](assembly/) | Assembly — MIPS (SPIM) and x86-64 (NASM/GNU as), from syscalls to procedures and a final project | MIPS asm, x86-64 asm, C |
 | [`networks`](networks/) | Computer Networks — TCP/IP socket clients/servers, from blocking I/O to `select()` multiplexing | C |
