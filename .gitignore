@@ -52,3 +52,6 @@
 
 # PDF output (keep source, ignore compiled PDFs for now)
 *.pdf
+
+# Core dumps
+core
