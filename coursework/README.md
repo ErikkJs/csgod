@@ -11,9 +11,9 @@ Undergrad CS coursework, grouped by subject. Each subject has a descriptive fold
 | [`computer-graphics`](computer-graphics/) | Computer Graphics (CMPS 3480) — X11 rasterization, ray tracers, OpenGL, Perlin noise, reflective-sphere final | C++, C |
 | [`software-development`](software-development/) | Software Development (CMPS 3350) — C++ software-construction labs (OpenGL demos, HTTP client, debugging) | C++, C, PHP |
 | [`data-structures`](data-structures/) | Data Structures (CMP222 / CMPS2020) — linked lists, stacks, heaps, sorting + notes/labs/midterm | C++, C |
-| [`programming-languages`](programming-languages/) | Programming Languages (CMPS 3500) — paradigms across several languages | C++, Java, Ada, Perl |
+| [`programming-languages`](programming-languages/) | Programming Languages (CMPS 3500) — paradigms across several languages | C++, Lisp, Java, Ada, Perl |
 | [`software-security`](software-security/) | Software Security — GDB crash debugging, C++↔x86-64 mapping, reverse-engineering stripped binaries | C++, x86-64 asm |
 | [`web-development`](web-development/) | Web Development — two iterations of a PHP/MySQL Bootstrap e-commerce store | PHP, SQL, HTML, CSS, JS |
 | [`python`](python/) | Python (CMPS 3500) — higher-order functions and generator coroutines | Python |
 | [`csharp`](csharp/) | C# — a polymorphism lab (`IShape` → Rectangle/Triangle/Circle) | C# |
-| [`random_c++`](random_c++/) | Grab-bag of one-off exercises not tied to a single course (C++, asm, Lisp, Prolog, …) | Mixed |
+| [`misc-cpp`](misc-cpp/) | Miscellaneous one-off exercises not tied to a course (small C++, stray asm, Prolog, game fragments) | Mixed |
