@@ -4,14 +4,14 @@
 # Ignore executable files
 *.exe
 *.out
-*.app  # For macOS
+*.app
 
-# Ignore other binaries
+# Ignore other binaries (note: gitignore has no inline comments; keep them on their own lines)
 *.dll
-*.so  # Shared objects on Linux
-*.dylib  # macOS dynamic libraries
-*.a  # Static libraries
-*.class  # Java bytecode
+*.so
+*.dylib
+*.a
+*.class
 
 # Ignore build directories
 /build/
