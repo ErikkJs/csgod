@@ -10,6 +10,8 @@
 *.dll
 *.so  # Shared objects on Linux
 *.dylib  # macOS dynamic libraries
+*.a  # Static libraries
+*.class  # Java bytecode
 
 # Ignore build directories
 /build/
