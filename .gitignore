@@ -58,3 +58,8 @@ core
 
 # Captured program stdout files named "out"
 /coursework/**/out
+
+# Kept local-only (personal, not part of the portfolio repo)
+/leetcode/
+/research/
+/notes/
