@@ -55,3 +55,6 @@
 
 # Core dumps
 core
+
+# Captured program stdout files named "out"
+/coursework/**/out
